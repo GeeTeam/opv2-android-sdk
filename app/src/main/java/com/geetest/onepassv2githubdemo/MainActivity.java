@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 配置的网关customid
      */
-    private static final String CUSTOM_ID = "002be954ad7c550fee49f300cdf7bd0f";
+    private static final String CUSTOM_ID = "";
     /**
      * 进度条
      */
