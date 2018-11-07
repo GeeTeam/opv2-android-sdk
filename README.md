@@ -111,12 +111,6 @@ OnePassListener onePassListener =new OnePassListener() {
 		//sdk输出的参数,通过这些参数请求verifyUrl判断是否是本机号
 	}
 
-	@Override
-	public boolean onAlgorithm() {
-		//是否需要加密手机号,true表示加密,false表示不加密
-	}
-
-
 };
 
 ```

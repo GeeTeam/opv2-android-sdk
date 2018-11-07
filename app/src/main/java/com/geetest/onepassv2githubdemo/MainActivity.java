@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
     private OnePassListener onePassListener;
 
     /**
-     * 服务器配置的verifyUrl接口
+     * 服务器配置的verifyUrl接口<>需要用到服务SDK</>
      */
-    public static final String GOP_VERIFY_URL = "https://onepass.geetest.com/v2.0/result";
+    public static final String GOP_VERIFY_URL = "";
     /**
-     * 配置的网关customid
+     * 配置的网关customid<>需要申请ID</>
      */
     private static final String CUSTOM_ID = "";
     /**
