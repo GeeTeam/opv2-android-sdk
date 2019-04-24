@@ -81,14 +81,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setBackgroundDrawable(null);
         TextView textView = (TextView) findViewById(R.id.gtop_title_name);
         textView.setText(new GTMTextUtils().getText());
-        //拿到这个权限可以更方便的进行网关验证
-        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE);
-        if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
-            Log.i(TAG, "开启权限会提高成功率哟!");
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE}, 1);
-        } else {
-            Log.i(TAG, "您的权限已开启,欢迎更好的使用极验产品onepass!");
-        }
         init();
         initGop();
     }
