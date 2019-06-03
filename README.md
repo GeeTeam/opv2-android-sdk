@@ -367,6 +367,10 @@ Code	|Description
 
 答：当前无论单卡还是双卡，都是以默认开启数据网络的卡进行网关校验的。其中，无法判断默认数据网络的卡有三种情况，这三种情况为：没有开启`READ_PHONE_STATE`权限；无法获取当前的`IMSI`；无法根据当前的`IMSI`来判断运营商。
 
+### 5. 怎样与OneLogin一起使用？
+
+答：在demo项目的app目录下有`geetest.gradle文件`，在控制台执行`./gradlew excludeAar`即可生成脱离了移动SDK的OnePass SDK,路径在`app\build\excludeaar`下，直接使用即可。
+
 > 及时查看查看极验输出日志
 
 

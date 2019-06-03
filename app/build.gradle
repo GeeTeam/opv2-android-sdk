@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
-
+configurations.maybeCreate("default")
+artifacts.add("default", file('/libs/'+file('/libs').listFiles().find {
+    it.name.endsWith('.aar')
+}.getName()))
+apply from: "${project.projectDir.absoluteFile}\\geetest.gradle"
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -28,5 +32,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile(name: 'geetest_onepassv2_android_v0.1.0_20190424', ext: 'aar')
+    compile(name: 'geetest_onepassv2_android_v0.2.0_20190603', ext: 'aar')
 }
