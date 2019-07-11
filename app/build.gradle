@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 configurations.maybeCreate("default")
-artifacts.add("default", file('/libs/'+file('/libs').listFiles().find {
-    it.name.endsWith('.aar')
-}.getName()))
+artifacts.add("default", file('/libs/geetest_onepassv2_android_v0.2.1_20190626.aar'))
 apply from: "${project.projectDir.absoluteFile}\\geetest.gradle"
 android {
     compileSdkVersion 25
