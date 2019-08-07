@@ -316,6 +316,10 @@ OnePassHelper.with().setConnectTimeout();
 -keep class com.geetest.onepassv2.** {
 *;
 }
+-dontwarn com.cmic.sso.sdk.**
+-keep class com.cmic.sso.sdk.** {
+*;
+}
 ```
 ## 日志打印
 
