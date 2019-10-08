@@ -316,6 +316,10 @@ OnePassHelper.with().setConnectTimeout();
 -keep class com.geetest.onepassv2.** {
 *;
 }
+-dontwarn com.cmic.sso.sdk.**
+-keep class com.cmic.sso.sdk.** {
+*;
+}
 ```
 ## 日志打印
 
@@ -365,7 +369,7 @@ Code	|Description
 
 ### 4. 本产品的数据网络运营商是怎样判断的？
 
-答：当前无论单卡还是双卡，都是以默认开启数据网络的卡进行网关校验的。其中，无法判断默认数据网络的卡有三种情况，这三种情况为：没有开启`READ_PHONE_STATE`权限；无法获取当前的`IMSI`；无法根据当前的`IMSI`来判断运营商。
+答：当前无论单卡还是双卡，都是以默认开启数据网络的卡进行网关校验的。
 
 ### 5. 怎样与OneLogin一起使用？
 
