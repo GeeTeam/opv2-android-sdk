@@ -16,6 +16,12 @@ sdk三方依赖|无
 
 # 安装
 
+## 远程依赖
+
+```gradle
+ compile 'com.geetest:onepass:0.3.1'
+```
+
 ## 获取SDK
 
 1. 在demo的`libs`包下，将获取的`.aar`文件拖拽到工程中的libs文件夹下。
@@ -23,7 +29,7 @@ sdk三方依赖|无
 2. 在拖入`.aar`到libs文件夹后, 还要检查`.aar`是否被添加到**Library**,要在项目的
 build.gradle下添加如下代码：
 
-	```java
+	```gradle
 	repositories {
 		flatDir {
 	  		dirs 'libs'
@@ -34,14 +40,14 @@ build.gradle下添加如下代码：
 
 	并且要手动将aar包添加依赖：
 
-	```java
+	```gradle
 	compile(name: 'geetest_onepassv2_android_vx.y.z', ext: 'aar')
 
 	```
 
 3. 添加权限
 
-	```java
+	```xml
 	 <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 	 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
