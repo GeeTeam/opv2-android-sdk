@@ -19,7 +19,7 @@ sdk三方依赖|无
 ## 远程依赖
 
 ```gradle
- compile 'com.geetest:onepass:0.3.1'
+ compile 'com.geetest:onepass:0.3.2'
 ```
 
 ## 获取SDK
